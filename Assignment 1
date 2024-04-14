@@ -1,1 +1,111 @@
 
+1.Pseudocode Development - Task: Write a detailed pseudocode for a simple program that takes a number as input,
+calculates the square if it's even or the cube if it's odd, and then outputs the result. Incorporate conditional and looping constructs.
+
+Solution:
+
+Start
+Enter the number
+if i%2==0
+print(i,"squared is",i**2) 
+else
+print(i,"cube is",i**3) 
+End
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+2.Flowchart Creation - Design a flowchart that outlines the logic for a user login process. It should include conditional paths 
+for successful and unsuccessful login attempts, and a loop that allows a user three attempts before locking the account.
+
+Solution:
+
+Start
+ |
+ V
+Enter username and password
+ |
+ V
+Check if username and password are correct
+ |       |
+ |       V
+ |   Yes---------------------------> Successful Login
+ |       |
+ |       V
+ |   [No]
+ |       |
+ |       V
+ |  {if attempts <=3}
+ |       |          |
+ |       |          V
+ |       |      [Yes]---------------->[Enter username and password again]----------->Successful Login
+ |       |          |
+ |       |          V
+ |       |      [No]
+ |       |          |
+ |       |          V
+ |       |   Lock Account
+ |       |          
+ |       |
+ |       V
+ |   End loop
+ |
+ V
+End
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+3.Function Design and Modularization - Create a document that describes the design of two modular functions: 
+one that returns the factorial of a number, and another that calculates the nth Fibonacci number. 
+Include pseudocode and a brief explanation of how modularity in programming helps with code reuse and organization.
+
+Solution:
+
+Factorial of a number:
+pseudocode
+
+Start
+Function factorial(n)
+if n==0 || n==1 
+then
+return 1
+else
+return n * factorial(n - 1)
+End loop
+End
+
+Fibonacci number:Pseudocode
+
+Start
+Function fibonacci(n)
+if n<=1 then
+return n
+else
+return fibonacci(n-1)+fibonacci(n - 2)
+End loop
+End
+
+
+Modularity in programming :
+Modularity in programming refers to the practice of breaking down a program into smaller,self-contained modules or functions. 
+1.Code Reusability: Modular functions can be reused in multiple parts of a program or even in different programs altogether
+2.Simplified Debugging and Testing: With modular functions, debugging and testing become easier since each function can be tested 
+independently. 
+3.Improved Readability and Maintainability: Breaking a program into modular functions enhances readability by organizing code into smaller,
+more manageable units. 
+4.Encapsulation of Logic: Modularization allows for the encapsulation of specific functionality within each function. This helps in abstracting 
+the implementation details, making it easier to understand and work with the code.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+                                      ********END*********
+
+
+
+
+
+
+
