@@ -1,1 +1,330 @@
+1.Temperature Converter:
+		Develop a temperature converter program that converts temperatures between Celsius and Fahrenheit. 
+The program should ask the user to choose the conversion type (Celsius to Fahrenheit or Fahrenheit to Celsius) and then input the temperature value.
+ Use a switch statement to handle the conversion type, and if-else statements to perform the actual conversion.
+
+Start
+enter temperature
+input temperature
+enter conversionType
+read conversionType
+switch(conversionType)
+case "celsius to Fahrenheit":
+fahrenheit= ((celsius*9)/5)+32; 
+print "fahrenheit is"
+break;
+case "Fahrenheit to Celsius" :
+celsius=((Fahrenheit-32)*5)/9;
+print "celsius is"
+end
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Day of the Week:
+Write a program that prompts the user to enter a number between 1
+and 7 representing a day of the week (1 for Sunday, 2 for Monday, and so on).
+Use a switch statement to determine the day entered by the user and output the 
+corresponding day name. If the user enters a number outside the range of 1-7, 
+display an error message.
+
+start
+enter number
+input number
+switch (day) 
+            case 1: dayName = "Monday";
+		 break;
+            case 2: dayName = "Tuesday"; 
+		break;
+            case 3: dayName = "Wednesday"; 
+		break;
+            case 4: dayName = "Thursday";
+		 break;
+            case 5: dayName = "Friday";
+		 break;
+            case 6: dayName = "Saturday";
+		 break;
+            case 7: dayName = "Sunday";
+		 break;
+            default:dayName = "error";
+print "dayName"
+end
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+3.BMI Calculator:
+Create a BMI (Body Mass Index) calculator program.
+The program should ask the user for their weight (in kilograms) and height (in meters). 
+Then, calculate the BMI using the formula BMI = weight / (height * height). 
+Finally, classify the BMI into categories according to the following criteria:
+Underweight: BMI < 18.5
+Normal weight: 18.5 <= BMI < 25
+Overweight: 25 <= BMI < 30
+Obese: BMI >= 30
+
+Start
+bmi=weight/(height*height)
+enter height
+enter weight
+if(bmi<18.5)
+print"underweight"
+else if(bmi>=18.5 && bmi<25)
+print "normal weight"
+else if(bmi>=25 && bmi<30)
+print "overweight"
+else if(bmi>=30)
+print"obese"
+end
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+4.Write alog for Factorial Calculator:
+that calculates the factorial of a given number using a loop. 
+The factorial of a non-negative integer n is denoted by n! and is the product of all positive integers less than or
+ equal to n. 
+For example, 5! = 5 × 4 × 3 × 2 × 1 = 120. Prompt the user to enter a number, 
+then use a loop to calculate and output its factorial.
+
+
+Start
+enter a number
+int i,fact=1
+for(i=1;<=number;i++)
+fact=fact*i;
+print ("factorial of"+number+ "is" +fact)
+end
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+5.Number Guessing Game:
+Develop a number guessing game where the program randomly generates a number between 1 
+and 100. 
+The user has to guess the number, and the program provides feedback 
+(higher, lower, or correct) after each guess. 
+Use a loop to allow the user to keep guessing until they correctly guess the number.
+ 
+
+Start
+Enter number between 1 and 100
+input number
+read number
+if(input>50)
+print "guess is higher"
+else if(input<50)
+print "guess is lower"
+else if(input==50)
+print "guess is correct"
+End
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+6. Prime Number Generator:
+Create a alo/pseudocode that generates and displays all prime numbers within a specified range (e.g., between 1 and 100).
+ Use nested loops to iterate through each number in the range and determine if it's a prime number.
+ A prime number is a whole number greater than 1 that has no positive divisors other than 1 and itself.
+
+
+Start
+for(int i=2;i<=100;i++)
+for(int j=2;j<i-1;j++)
+if (i%j != 0)
+print "i"
+end
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+7.Fibonacci Sequence Generator:
+Write a program to generate the Fibonacci sequence up to a specified number of terms. 
+The Fibonacci sequence starts with 0 and 1, and each subsequent number is the sum of 
+the two preceding numbers (0, 1, 1, 2, 3, 5, 8, 13, ...). Prompt the user to enter the
+number of terms they want to generate and use a loop to calculate and output the sequence.
+
+
+Start
+Enter n
+int num1=0,num2=1
+for(int i=0;i<n;i++)
+print num1+" "
+int num3 = num2+num1
+num1=num2
+num2=num3
+end
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+8.Palindrome Checker:
+Develop a program that checks whether a given string is a palindrome or not. 
+A palindrome is a word, phrase, number, or other sequence of characters that reads 
+the same backward as forward (e.g., "radar" or "madam"). Prompt the user to enter a string,
+then use a loop to compare characters from the beginning and end of the string to determine 
+if it's a palindrome.
+
+Start
+int r,sum=0,temp;
+enter a number
+temp=n;
+while(n>0){
+r=n%10;
+sum=(sum*10)+r
+n=n/10;}
+if(temp==sum)
+print "palindrome"
+else
+print "not palindrome"
+End
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+9.Voting Eligibility Checker:
+Create a program that determines whether a person is eligible to vote in an election based on the following criteria:
+Age must be 18 or above.
+Must be a citizen of the country.
+Prompt the user to input their age,
+citizenship status (yes/no), and felony status (yes/no), and 
+then use complex logical expressions to determine and output whether they are eligible to vote.
+
+
+
+Start
+char input= 'y' && 'n'
+int age
+Enter your age
+if(age>=18 && citizen status = y && felony status =y)
+print "eligible to vote"
+else
+print "not eligible"
+End
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+10.Credit Card Approval System:
+Design a program that evaluates whether a person is approved for a credit card based on the following criteria:
+Minimum credit score requirement: 700
+Maximum debt-to-income ratio: 30%
+No recent bankruptcies (within the last 5 years)
+Prompt the user to input their credit score, debt amount, income amount, 
+and bankruptcy status, then use complex logical expressions to determine 
+and output whether they are approved for the credit card.
+
+import java.util.Scanner;
+public class CreditCardApprovalSystem {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your credit score: ");
+        int creditScore = scanner.nextInt();
+        System.out.print("Enter your total debt amount: ");
+        double debtAmount = scanner.nextDouble();
+        System.out.print("Enter your annual income: ");
+        double incomeAmount = scanner.nextDouble();
+        System.out.print("Have you filed for bankruptcy in the last 5 years? (yes/no): ");
+        String bankruptcyStatus = scanner.next();
+        if (creditScore >= 700 && (debtAmount / incomeAmount <= 0.3) && bankruptcyStatus.equalsIgnoreCase("no")) {
+            System.out.println("Congratulations! You are approved for the credit card.");
+        } else {
+            System.out.println("Sorry, you are not approved for the credit card.");
+        }
+        scanner.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+11.Develop a program that assesses whether an employee is eligible for a promotion based on the following criteria:
+●	Must have worked for the company for at least 5 years.
+●	Must have a performance rating of "excellent."
+●	Must have completed at least one advanced training program.
+●	Prompt the user to input their years of service, performance rating, and training status, then use complex logical expressions to determine and output whether they are eligible for promotion.
+
+
+import java.util.Scanner;
+public class PromotionEligibility {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter years of service: ");
+        int yearsOfService = scanner.nextInt();
+        System.out.print("Enter performance rating (excellent/good/fair/poor): ");
+        String performanceRating = scanner.next().toLowerCase();
+        System.out.print("Has completed advanced training program? (yes/no): ");
+        String trainingStatus = scanner.next().toLowerCase();
+        if (yearsOfService >= 5 && performanceRating.equals("excellent") && trainingStatus.equals("yes")) {
+            System.out.println("Congratulations! You are eligible for promotion.");
+        } else {
+            System.out.println("Sorry, you are not eligible for promotion.");
+        }
+        scanner.close();
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+12.	Product Discount Calculator:
+Write a program that calculates the discount amount for a product based on the following criteria:
+●	If the product price is over $100 and the customer is a premium member, they get a 20% discount.
+●	If the product price is over $100 and the customer is not a premium member, they get a 10% discount.
+●	If the product price is $100 or less, there is no discount.
+●	Prompt the user to input the product price and their premium membership status, then use complex logical expressions to calculate and output the discount amount.
+
+
+import java.util.Scanner;
+public class ProductDiscountCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter product price: $");
+        double productPrice = scanner.nextDouble();
+        System.out.print("Are you a premium member? (yes/no): ");
+        String premiumStatus = scanner.next().toLowerCase();
+        double discount = 0.0;
+        if (productPrice > 100) {
+            if (premiumStatus.equals("yes")) {
+                discount = 0.20 * productPrice; // 20% discount for premium members
+            } else {
+                discount = 0.10 * productPrice; // 10% discount for non-premium members
+            }
+        }
+        if (discount > 0) {
+            System.out.println("You get a discount of: $" + discount);
+        } else {
+            System.out.println("No discount available for this product.");
+        }
+        scanner.close();
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+13.	Health Insurance Plan Eligibility:
+  Design a program that determines whether a person is eligible for a particular health insurance plan based on the following criteria:
+●	Age must be between 18 and 65.
+●	Must not have any pre-existing medical conditions.
+●	Must not have any recent hospitalizations (within the last 6 months).
+●	Prompt the user to input their age, medical condition status, and hospitalization status, then use complex logical expressions to determine and output whether they are eligible for the insurance plan.
+
+import java.util.Scanner;
+public class InsuranceEligibility {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+        System.out.print("Do you have any pre-existing medical conditions? (yes/no): ");
+        String medicalCondition = scanner.next().toLowerCase();
+        System.out.print("Have you been hospitalized within the last 6 months? (yes/no): ");
+        String hospitalization = scanner.next().toLowerCase();
+        if (age >= 18 && age <= 65 && medicalCondition.equals("no") && hospitalization.equals("no")) {
+            System.out.println("You are eligible for the health insurance plan");
+        } else {
+            System.out.println("you are not eligible for the health insurance plan");
+        }
+        scanner.close();
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
+                                          *******END*********
+
+
+
+
 
