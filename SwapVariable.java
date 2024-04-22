@@ -1,6 +1,3 @@
-Task 1: Data Types/Variables
-Write a program that declares two integer variables, swaps their values without using a 
-third variable, and prints the result.
 
 
 public class SwapVariables {
