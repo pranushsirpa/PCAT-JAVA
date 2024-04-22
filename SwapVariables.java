@@ -1,5 +1,6 @@
 
 
+
 public class SwapVariables {
     public static void main(String[] args) {
         int a = 5;
